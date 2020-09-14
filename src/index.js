@@ -9,7 +9,8 @@ ReactDOM.render(
     <First></First>
     <WithParam
       title="Second component"
-      subtitle="Very cool">
+      student="Xavier"
+      grade={9.4}>
     </WithParam>
   </div>,
   document.getElementById('root')
