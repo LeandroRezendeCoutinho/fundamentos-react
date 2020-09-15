@@ -9,9 +9,14 @@ export default () =>
   <div id="app">
     <h1>React fundamentals</h1>
 
-    <Card title="Card example"></Card>
+    <Card title="Card example">
+      <Random min={10} max={20} />
+      <Random min={10} max={20} />
+      <Random min={10} max={20} />
+      <Random min={10} max={20} />
+      <Random min={10} max={20} />
+    </Card>
 
-    <Random min={10} max={20} />
     <Fragment />
     <WithParam
       title="Second component"
