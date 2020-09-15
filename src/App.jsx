@@ -9,20 +9,24 @@ export default () =>
   <div id="app">
     <h1>React fundamentals</h1>
 
-    <Card title="Card example">
-      <Random min={10} max={20} />
-      <Random min={10} max={20} />
-      <Random min={10} max={20} />
-      <Random min={10} max={20} />
+    <Card title="Random example">
       <Random min={10} max={20} />
     </Card>
 
-    <Fragment />
-    <WithParam
-      title="Second component"
-      student="Xavier"
-      grade={9.4}>
-    </WithParam>
-    <First></First>
+    <Card title="Fragment example">
+      <Fragment />
+    </Card>
+
+    <Card title="Second example">
+      <WithParam
+        title="Second component"
+        student="Xavier"
+        grade={9.4}>
+      </WithParam>
+    </Card>
+
+    <Card title="First example">
+      <First></First>
+    </Card>
   </div>
 
