@@ -4,6 +4,7 @@ import WithParam from "./components/basics/WithParam";
 import Fragment from "./components/basics/Fragment";
 import Random from "./components/basics/Random";
 import Card from "./components/layout/Card";
+import Family from "./components/basics/Family";
 import "./App.css";
 
 export default () =>
@@ -11,6 +12,10 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
+      <Card title="Children component" color="#5499C7">
+        <Family lastName="Stevens"></Family>
+      </Card>
+
       <Card title="Random example" color="#DAF7A6">
         <Random min={10} max={20} />
       </Card>
