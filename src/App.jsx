@@ -11,15 +11,15 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
-      <Card title="Random example">
+      <Card title="Random example" color="#DAF7A6">
         <Random min={10} max={20} />
       </Card>
 
-      <Card title="Fragment example">
+      <Card title="Fragment example" color="#FFC300">
         <Fragment />
       </Card>
 
-      <Card title="Second example">
+      <Card title="Second example" color="#FF5733">
         <WithParam
           title="Second component"
           student="Xavier"
@@ -27,7 +27,7 @@ export default () =>
         </WithParam>
       </Card>
 
-      <Card title="First example">
+      <Card title="First example" color="#C70039">
         <First></First>
       </Card>
 
