@@ -7,7 +7,7 @@ export default props => {
     <div>
       <FamilyMember firstName="Pedro" lastName={lastName}></FamilyMember>
       <FamilyMember firstName="Ana" lastName={lastName}></FamilyMember>
-      <FamilyMember firstName="Joan" lastName={lastName}></FamilyMember>
+      <FamilyMember firstName="Joan" {...props}></FamilyMember>
     </div>
   )
 }
