@@ -5,6 +5,7 @@ import Fragment from "./components/basics/Fragment";
 import Random from "./components/basics/Random";
 import Card from "./components/layout/Card";
 import Family from "./components/basics/Family";
+import FamilyMember from "./components/basics/FamilyMember";
 import "./App.css";
 
 export default () =>
@@ -13,7 +14,13 @@ export default () =>
 
     <div className="Cards">
       <Card title="Children component" color="#5499C7">
-        <Family lastName="Stevens"></Family>
+        <Family lastName="Stevens">
+          <FamilyMember firstName="Pedro" ></FamilyMember>
+          {/*
+          <FamilyMember firstName="Ana" ></FamilyMember>
+          <FamilyMember firstName="Joan" ></FamilyMember>
+          */}
+        </Family>
       </Card>
 
       <Card title="Random example" color="#DAF7A6">
