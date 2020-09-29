@@ -16,10 +16,8 @@ export default () =>
       <Card title="Children component" color="#5499C7">
         <Family lastName="Stevens">
           <FamilyMember firstName="Pedro" ></FamilyMember>
-          {/*
           <FamilyMember firstName="Ana" ></FamilyMember>
           <FamilyMember firstName="Joan" ></FamilyMember>
-          */}
         </Family>
       </Card>
 
