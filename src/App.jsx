@@ -6,6 +6,8 @@ import Random from "./components/basics/Random";
 import Card from "./components/layout/Card";
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
+import StudentsList from "./components/repetition/StudentsList";
+
 import "./App.css";
 
 export default () =>
@@ -13,6 +15,10 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
+      <Card title="Children component filled by array" color="#5499C7">
+        <StudentsList></StudentsList>
+      </Card>
+
       <Card title="Children component" color="#5499C7">
         <Family lastName="Stevens">
           <FamilyMember firstName="Pedro" ></FamilyMember>
