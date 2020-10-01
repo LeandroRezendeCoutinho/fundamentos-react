@@ -7,6 +7,7 @@ import Card from "./components/layout/Card";
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 import StudentsList from "./components/repetition/StudentsList";
+import ProductTable from "./components/repetition/ProductTable";
 
 import "./App.css";
 
@@ -15,7 +16,11 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
-      <Card title="Children component filled by array" color="#5499C7">
+      <Card title="Children component filled by array" color="#C77E54">
+        <ProductTable></ProductTable>
+      </Card>
+
+      <Card title="Children component filled by array" color="#C7B254">
         <StudentsList></StudentsList>
       </Card>
 
