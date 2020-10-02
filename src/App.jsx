@@ -9,6 +9,7 @@ import FamilyMember from "./components/basics/FamilyMember";
 import StudentsList from "./components/repetition/StudentsList";
 import ProductTable from "./components/repetition/ProductTable";
 import OddEven from "./components/conditional/OddEven";
+import UserInfo from "./components/conditional/UserInfo";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ export default () =>
     <div className="Cards">
       <Card title="Conditional render" color="#804db3">
         <OddEven value={Math.floor(Math.random(10) * 10)}></OddEven>
+        <UserInfo user={{ name: 'Israel' }}></UserInfo>
       </Card>
 
       <Card title="Children component filled by array" color="#C77E54">
