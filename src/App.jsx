@@ -21,6 +21,7 @@ export default () =>
       <Card title="Conditional render" color="#804db3">
         <OddEven value={Math.floor(Math.random(10) * 10)}></OddEven>
         <UserInfo user={{ name: 'Israel' }}></UserInfo>
+        <UserInfo user={{}}></UserInfo>
       </Card>
 
       <Card title="Children component filled by array" color="#C77E54">
