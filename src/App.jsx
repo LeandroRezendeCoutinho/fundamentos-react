@@ -11,6 +11,7 @@ import ProductTable from "./components/repetition/ProductTable";
 import OddEven from "./components/conditional/OddEven";
 import UserInfo from "./components/conditional/UserInfo";
 import DirectParent from "./components/comunication/DirectParent";
+import IndirectParent from "./components/comunication/IndirectParent";
 
 import "./App.css";
 
@@ -19,6 +20,10 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
+      <Card title="Indirect comunication" color="#8BAD39">
+        <IndirectParent></IndirectParent>
+      </Card>
+
       <Card title="Direct comunication" color="#59323c">
         <DirectParent></DirectParent>
       </Card>
