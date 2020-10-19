@@ -12,6 +12,7 @@ import OddEven from "./components/conditional/OddEven";
 import UserInfo from "./components/conditional/UserInfo";
 import DirectParent from "./components/comunication/DirectParent";
 import IndirectParent from "./components/comunication/IndirectParent";
+import Input from "./components/form/Input";
 
 import "./App.css";
 
@@ -20,6 +21,10 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
+      <Card title="Controled component (input)" color="#E45F56">
+        <Input></Input>
+      </Card>
+
       <Card title="Indirect comunication" color="#8BAD39">
         <IndirectParent></IndirectParent>
       </Card>
