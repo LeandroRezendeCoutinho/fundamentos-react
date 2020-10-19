@@ -1,16 +1,47 @@
-import React from "react";
+import React, { Component } from "react";
+import "./Counter.css"
 
-class Counter extends React.Component {
-
+class Counter extends Component {
   state = {
-    number: 0
+    number: this.props.initialValue || 0,
+    quantity: this.props.quantity || 5,
+  }
+
+  inc = () => {
+    this.setState({
+      number: this.state.number + this.state.quantity
+    })
+  }
+
+  dec = () => {
+    this.setState({
+      number: this.state.number - this.state.quantity
+    })
+  }
+
+  // pass as event and convert value to number
+  setQuantity = (event) => {
+    this.setState({
+      quantity: +event.target.value,
+    })
   }
 
   render() {
     return (
-      <div>
+      <div className="Counter">
         <h2>Counter</h2>
-        <p>Initial value: {this.props.initialValue}</p>
+        <h3>{this.state.number}</h3>
+        <div>
+          <label htmlFor=""></label>
+          <input
+            id="quantityInput"
+            type="number"
+            value={this.state.quantity}
+            onChange={this.setQuantity}
+          />
+        </div>
+        <button onClick={this.dec}> - </button>
+        <button onClick={this.inc}> + </button>
       </div>
     )
   }
