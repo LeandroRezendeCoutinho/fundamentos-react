@@ -14,6 +14,7 @@ import DirectParent from "./components/comunication/DirectParent";
 import IndirectParent from "./components/comunication/IndirectParent";
 import Input from "./components/form/Input";
 import Counter from "./components/counter/counter";
+import Mega from "./components/mega/Mega";
 
 import "./App.css";
 
@@ -22,6 +23,10 @@ export default () =>
     <h1>React fundamentals</h1>
 
     <div className="Cards">
+      <Card title="Mega" color="#B9006E">
+        <Mega quantity={6}></Mega>
+      </Card>
+
       <Card title="Counter" color="#424242">
         <Counter initialValue={10}></Counter>
       </Card>
